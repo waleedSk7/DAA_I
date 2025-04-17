@@ -1,0 +1,20 @@
+Reading graph from: test_case.txt
+Graph loaded with 6 vertices
+Total edges: 8
+Maximum degree: 4
+Degeneracy of the graph: 2
+
+First 10 vertices in the degeneracy ordering: 5 4 3 2 1 0 
+
+Finding all maximal cliques...
+
+
+----- FINAL RESULTS -----
+Found 3 maximal cliques in 2.029 ms (0.002029 seconds)
+Largest clique size: 3
+Distribution of clique sizes:
+Clique size 3: 3 cliques
+Total execution time: 0 seconds
+-----------------------
+
+BronKerboschDegeneracy completed in 0.002029 seconds.

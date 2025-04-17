@@ -1,0 +1,85 @@
+Reading graph from: as-skitter-clean.txt
+Graph loaded with 1696415 vertices
+Total edges: 11095298
+Maximum degree: 35455
+Degeneracy of the graph: 111
+
+First 10 vertices in the degeneracy ordering: 1696414 1696413 1696412 1696411 1696410 1696409 1696408 1696407 1696402 1696401 
+
+Finding all maximal cliques...
+
+
+----- FINAL RESULTS -----
+Found 37322355 maximal cliques in 1.11755e+008 ms (111755 seconds)
+Largest clique size: 67
+Distribution of clique sizes:
+Clique size 2: 2319807 cliques
+Clique size 3: 3171609 cliques
+Clique size 4: 1823321 cliques
+Clique size 5: 939336 cliques
+Clique size 6: 684873 cliques
+Clique size 7: 598284 cliques
+Clique size 8: 588889 cliques
+Clique size 9: 608937 cliques
+Clique size 10: 665661 cliques
+Clique size 11: 728098 cliques
+Clique size 12: 798073 cliques
+Clique size 13: 877282 cliques
+Clique size 14: 945194 cliques
+Clique size 15: 980831 cliques
+Clique size 16: 939987 cliques
+Clique size 17: 839330 cliques
+Clique size 18: 729601 cliques
+Clique size 19: 639413 cliques
+Clique size 20: 600192 cliques
+Clique size 21: 611976 cliques
+Clique size 22: 640890 cliques
+Clique size 23: 673924 cliques
+Clique size 24: 706753 cliques
+Clique size 25: 753633 cliques
+Clique size 26: 818353 cliques
+Clique size 27: 892719 cliques
+Clique size 28: 955212 cliques
+Clique size 29: 999860 cliques
+Clique size 30: 1034106 cliques
+Clique size 31: 1055653 cliques
+Clique size 32: 1017560 cliques
+Clique size 33: 946717 cliques
+Clique size 34: 878552 cliques
+Clique size 35: 809485 cliques
+Clique size 36: 744634 cliques
+Clique size 37: 663650 cliques
+Clique size 38: 583922 cliques
+Clique size 39: 520239 cliques
+Clique size 40: 474301 cliques
+Clique size 41: 420796 cliques
+Clique size 42: 367879 cliques
+Clique size 43: 321829 cliques
+Clique size 44: 275995 cliques
+Clique size 45: 222461 cliques
+Clique size 46: 158352 cliques
+Clique size 47: 99522 cliques
+Clique size 48: 62437 cliques
+Clique size 49: 39822 cliques
+Clique size 50: 30011 cliques
+Clique size 51: 25637 cliques
+Clique size 52: 17707 cliques
+Clique size 53: 9514 cliques
+Clique size 54: 3737 cliques
+Clique size 55: 2042 cliques
+Clique size 56: 1080 cliques
+Clique size 57: 546 cliques
+Clique size 58: 449 cliques
+Clique size 59: 447 cliques
+Clique size 60: 405 cliques
+Clique size 61: 283 cliques
+Clique size 62: 242 cliques
+Clique size 63: 146 cliques
+Clique size 64: 84 cliques
+Clique size 65: 49 cliques
+Clique size 66: 22 cliques
+Clique size 67: 4 cliques
+Total execution time: 111755 seconds
+-----------------------
+
+BronKerboschDegeneracy completed in 111755 seconds.

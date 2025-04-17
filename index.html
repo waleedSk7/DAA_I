@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maximal Clique Enumeration Report</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            background-color: #1a1a1a; /* Dark background */
+            color: #ffffff; /* White text */
+            padding: 20px;
+        }
+        h1 {
+            color: #ffffff;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #2a2a2a;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        .button-container {
+            margin: 20px 0;
+        }
+        button {
+            margin: 10px;
+            padding: 12px 24px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background: #00674F;
+            color: white;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #00523D;
+        }
+        .content {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            background: #333333;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            color: #ffffff;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid #4CAF50;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            color: #ffffff;
+        }
+        th {
+            background-color: #4CAF50;
+            color: #ffffff;
+        }
+        .dataset-section {
+            display: none;
+        }
+        .algorithm-content {
+            display: none;
+        }
+        .graph-container {
+            margin-top: 20px;
+        }
+        canvas {
+            background-color: #2a2a2a;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .note {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #444;
+            border-left: 4px solid #f39c12;
+            border-radius: 4px;
+        }
+    </style>
+    <script>
+        function showContent(id) {
+            // Hide all content sections
+            document.querySelectorAll('.content').forEach(div => div.style.display = 'none');
+            // Show the selected content section
+            document.getElementById(id).style.display = 'block';
+        }
+
+        function showAlgorithmContent(id) {
+            // Hide all algorithm content sections
+            document.querySelectorAll('.algorithm-content').forEach(div => div.style.display = 'none');
+            // Show the selected algorithm content section
+            document.getElementById(id).style.display = 'block';
+        }
+
+        function toggleDataset(id) {
+            var section = document.getElementById(id);
+            section.style.display = section.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Maximal Clique Enumeration Report</h1>
+        
+        <div class="button-container">
+            <button onclick="showContent('contributors')">Contributors</button>
+            <button onclick="showContent('datasets')">Datasets</button>
+            <button onclick="showContent('algorithms')">Algorithms</button>
+        </div>
+        
+        <div id="contributors" class="content">
+            <h2>Contributors</h2>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Id</th>
+                    <th>Contribution</th>
+                </tr>
+                <tr>
+                    <td>Sthitaprajna</td>
+                    <td>2021B3A71082H</td>
+                    <td>Contributed to the implementation of the CLIQUES algorithm based on the Tomita et al. (2006) paper
+                        Implemented Arboricity based algorithm based on the Chiba et al. (1985) paper
+                    </td>
+                </tr>
+                <tr>
+                    <td>Kushagra Mishra</td>
+                    <td>2021B5A72970H</td>
+                    <td>Contributed to the implementation of the CLIQUES algorithm based on the Tomita et al. (2006) paper
+                        Contributed to the implementation of the Bron-Kerbosch algorithm based on the Eppstein et al. (2006) paper
+                    </td>
+                </tr>
+                <tr>
+                    <td>Riya Agrawal</td>
+                    <td>2021B3A70996H</td>
+                    <td>Implemented Arboricity based algorithm based on the Chiba et al. (1985) paper
+                        Helped develop and host the website 
+                    </td>
+                </tr>
+                <tr>
+                    <td>Dhruv Choudhary</td>
+                    <td>2021B3A73142H</td>
+                    <td>Contributed in implementing the arboricity based algorithm based on the Chiba et al. (1985) paper
+                        Authored the report
+                    </td>
+                </tr>
+                <tr>
+                    <td>Waleed Iqbal Shaikh</td>
+                    <td>2021B3A70559H</td>
+                    <td>
+                        Contributed to the implementation of the Bron-Kerbosch algorithm based on the Eppstein et al. (2006) paper
+                        Helped develop and host the website
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <div id="datasets" class="content">
+            <h2>Datasets</h2>
+            
+            <button onclick="toggleDataset('enron')">Enron Email Dataset</button>
+            <div id="enron" class="dataset-section">
+                <table>
+                    <tr><th>Graph Type</th><td>Undirected Graph</td></tr>
+                    <tr><th>Nodes / Edges</th><td>36,692 / 183,831</td></tr>
+                    <tr><th>Clustering Coefficient</th><td>0.4970</td></tr>
+                    <tr><th>Description</th><td>Represents email communications within Enron, with nodes as email addresses and edges indicating at least one email sent between them.</td></tr>
+                </table>
+                <canvas id="enronChart"></canvas>
+            </div>
+            
+            <button onclick="toggleDataset('wiki')">Wikipedia Vote Dataset</button>
+            <div id="wiki" class="dataset-section">
+                <table>
+                    <tr><th>Graph Type</th><td>Directed Graph</td></tr>
+                    <tr><th>Nodes / Edges</th><td>7,115 / 103,689</td></tr>
+                    <tr><th>Clustering Coefficient</th><td>0.1409</td></tr>
+                    <tr><th>Description</th><td>Represents voting data from Wikipedia administrator elections.</td></tr>
+                </table>
+                <canvas id="wikiChart"></canvas>
+            </div>
+            
+            <button onclick="toggleDataset('skitter')">Skitter Internet Topology Dataset</button>
+            <div id="skitter" class="dataset-section">
+                <table>
+                    <tr><th>Graph Type</th><td>Undirected Graph</td></tr>
+                    <tr><th>Nodes / Edges</th><td>1.7 million / 11 million</td></tr>
+                    <tr><th>Clustering Coefficient</th><td>0.2581</td></tr>
+                    <tr><th>Description</th><td>Represents the internet topology derived from traceroute data collected in 2005.</td></tr>
+                </table>
+                <canvas id="skitterChart"></canvas>
+            </div>
+        </div>
+
+        <div id="algorithms" class="content">
+            <h2>Algorithms</h2>
+            <button onclick="showAlgorithmContent('arboricity')">Arboricity</button>
+            <button onclick="showAlgorithmContent('bron')">Bron-Kerbosch</button>
+            <button onclick="showAlgorithmContent('tomita')">Tomita</button>
+
+            <!-- Arboricity Section -->
+            <div id="arboricity" class="algorithm-content">
+                <h2>Arboricity Algorithm</h2>
+                <p>This procedure focuses on listing all cliques of a given order k in a graph. It leverages the graph's arboricity, which is the minimum number of edge-disjoint spanning forests needed to cover the graph. The algorithm runs in time 
+                    O(a(G)^k−2⋅m) , where a(G) is the arboricity and m is the number of edges.</p>
+                <h3>Skitter Dataset Results</h3>
+                <table>
+                    <tr>
+                        <th>Metric</th>
+                        <th>Value</th>
+                    </tr>
+                    <tr>
+                        <td>Maximum Clique Size</td>
+                        <td>67</td>
+                    </tr>
+                    <tr>
+                        <td>Total Maximal Cliques Found</td>
+                        <td>37,322,355</td>
+                    </tr>
+                    <tr>
+                        <td>Execution Time</td>
+                        <td>25,233 milliseconds (loading only)</td>
+                    </tr>
+                </table>
+                
+                <div class="note">
+                    <p>Note: For the Skitter dataset, only the graph loading time of 25,233 ms was recorded. The complete algorithm execution time was not available as it ran for approximately 4 hours to process all 37,322,355 cliques.</p>
+                </div>
+
+                <!-- Clique Size Distribution Graph -->
+                <div class="graph-container">
+                    <h3>Skitter Clique Size Distribution</h3>
+                    <canvas id="aSkitterChart"></canvas>
+                </div>
+           
+                <!-- Wiki Dataset Results -->
+                <h3>Wiki Dataset Results</h3>
+                <table>
+                    <tr>
+                        <th>Metric</th>
+                        <th>Value</th>
+                    </tr>
+                    <tr>
+                        <td>Maximum Clique Size</td>
+                        <td>17</td>
+                    </tr>
+                    <tr>
+                        <td>Total Maximal Cliques Found</td>
+                        <td>459,002</td>
+                    </tr>
+                    <tr>
+                        <td>Execution Time</td>
+                        <td>141,966 milliseconds (142 seconds)</td>
+                    </tr>
+                </table>
+
+                <!-- Clique Size Distribution Graph -->
+                <div class="graph-container">
+                    <h3>Wiki-Vote Clique Size Distribution</h3>
+                    <canvas id="awikiChart"></canvas>
+                </div>
+
+                <!-- Email-Enron Dataset Results -->
+                <h3>Email-Enron Dataset Results</h3>
+                <table>
+                <tr>
+                    <th>Metric</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <td>Maximum Clique Size</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Total Maximal Cliques Found</td>
+                    <td>226,859</td>
+                </tr>
+                <tr>
+                    <td>Execution Time</td>
+                    <td>727,000 milliseconds (727 seconds)</td>
+                </tr>
+                </table>
+            
+                <!-- Clique Size Distribution Graph -->
+                <div class="graph-container">
+                   <h3>Email-Enron Clique Size Distribution</h3>
+                   <canvas id="aemailChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Bron-Kerbosch Section -->
+            <div id="bron" class="algorithm-content">
+                <h2>Bron-Kerbosch Algorithm</h2>
+                <p>This algorithm is a variant of the Bron–Kerbosch algorithm optimized for sparse graphs by utilizing the concept of degeneracy. Degeneracy is a measure of how sparse a graph is, defined as the smallest number d such that every subgraph contains a vertex of degree at most d. The algorithm lists all maximal cliques in time 
+                    O((d⋅n⋅3)^d/3), which is near-optimal for sparse graphs.</p>
+                
+                <!-- Skitter Dataset Results -->
+                <h3>Skitter Dataset Results</h3>
+                <table>
+                    <tr>
+                        <th>Metric</th>
+                        <th>Value</th>
+                    </tr>
+                    <tr>
+                        <td>Maximum Clique Size</td>
+                        <td>67</td>
+                    </tr>
+                    <tr>
+                        <td>Total Maximal Cliques Found</td>
+                        <td>37,322,355</td>
+                    </tr>
+                    <tr>
+                        <td>Execution Time</td>
+                        <td>111,755,000 milliseconds (111,755 seconds)</td>
+                    </tr>
+                    <tr>
+                        <td>Degeneracy of the Graph</td>
+                        <td>111</td>
+                    </tr>
+                    <tr>
+                        <td>Maximum Degree</td>
+                        <td>35,455</td>
+                    </tr>
+                </table>
+                
+                <div class="note">
+                    <p>Note: The algorithm successfully completed on the Skitter dataset, identifying all 37,322,355 maximal cliques with a maximum size of 67. The total execution time was 111,755 seconds.</p>
+                </div>
+                
+                <!-- Clique Size Distribution Graph -->
+                <div class="graph-container">
+                    <h3>Skitter Clique Size Distribution (Log Scale)</h3>
+                    <canvas id="bornSkitterChartLog"></canvas>
+                </div>
+                
+                <div class="graph-container">
+                    <h3>Skitter Clique Size Distribution (Standard Scale)</h3>
+                    <canvas id="bornSkitterChart"></canvas>
+                </div>
+           
+                <!-- Wiki Dataset Results -->
+                <h3>Wiki Dataset Results</h3>
+                <table>
+                    <tr>
+                        <th>Metric</th>
+                        <th>Value</th>
+                    </tr>
+                    <tr>
+                        <td>Maximum Clique Size</td>
+                        <td>17</td>
+                    </tr>
+                    <tr>
+                        <td>Total Maximal Cliques Found</td>
+                        <td>459,002</td>
+                    </tr>
+                    <tr>
+                        <td>Execution Time</td>
+                        <td>83,156 milliseconds (83.16 seconds)</td>
+                    </tr>
+                    <tr>
+                        <td>Degeneracy of the Graph</td>
+                        <td>53</td>
+                    </tr>
+                    <tr>
+                        <td>Maximum Degree</td>
+                        <td>1,065</td>
+                    </tr>
+                </table>
+
+                <!-- Clique Size Distribution Graph -->
+                <div class="graph-container">
+                    <h3>Wiki-Vote Clique Size Distribution</h3>
+                    <canvas id="bornwikiChart"></canvas>
+                </div>
+
+                <!-- Email-Enron Dataset Results -->
+                <h3>Email-Enron Dataset Results</h3>
+                <table>
+                <tr>
+                    <th>Metric</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <td>Maximum Clique Size</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Total Maximal Cliques Found</td>
+                    <td>226,859</td>
+                </tr>
+                <tr>
+                    <td>Execution Time</td>
+                    <td>56,641 milliseconds (56.64 seconds)</td>
+                </tr>
+                <tr>
+                    <td>Degeneracy of the Graph</td>
+                    <td>43</td>
+                </tr>
+                <tr>
+                    <td>Maximum Degree</td>
+                    <td>1,383</td>
+                </tr>
+                </table>
+            
+                <!-- Clique Size Distribution Graph -->
+                <div class="graph-container">
+                   <h3>Email-Enron Clique Size Distribution</h3>
+                   <canvas id="bornemailChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Tomita Section -->
+            <div id="tomita" class="algorithm-content">
+                <h2>Tomita Algorithm</h2>
+                <p>The Tomita algorithm is a depth-first search algorithm used to generate all maximal cliques of an undirected graph. It incorporates pruning methods similar to the Bron–Kerbosch algorithm to improve efficiency. The algorithm outputs the maximal cliques in a tree-like form, which optimizes space usage. Its worst-case time complexity is O(3^(n/3)) for an n-vertex graph, making it optimal as there can be at most O(3^(n/3)) maximal cliques in the graph. Extensive computational experiments demonstrate its superior performance compared to previous algorithms.</p>
+                
+                <!-- Skitter Dataset Results -->
+                <h3>Skitter Dataset Results</h3>
+                <table>
+                    <tr>
+                        <th>Metric</th>
+                        <th>Value</th>
+                    </tr>
+                    <tr>
+                        <td>Maximum Clique Size</td>
+                        <td>67</td>
+                    </tr>
+                    <tr>
+                        <td>Total Maximal Cliques Found</td>
+                        <td>37,322,355</td>
+                    </tr>
+                    <tr>
+                        <td>Execution Time</td>
+                        <td>683,360 milliseconds (683.36 seconds)</td>
+                    </tr>
+                </table>
+
+                <!-- Clique Size Distribution Graph -->
+                <div class="graph-container">
+                    <h3>Skitter Clique Size Distribution</h3>
+                    <canvas id="tomitaSkitterChart"></canvas>
+                </div>
+
+                <!-- Wiki-Vote Dataset Results -->
+                <h3>Wiki-vote Dataset Results</h3>
+                <table>
+                    <tr>
+                        <th>Metric</th>
+                        <th>Value</th>
+                    </tr>
+                    <tr>
+                        <td>Maximum Clique Size</td>
+                        <td>17</td>
+                    </tr>
+                    <tr>
+                        <td>Total Maximal Cliques Found</td>
+                        <td>459,002</td>
+                    </tr>
+                    <tr>
+                        <td>Execution Time</td>
+                        <td>4,036 milliseconds (4.04 seconds)</td>
+                    </tr>
+                </table>
+                <!-- Clique Size Distribution Graph -->
+                <div class="graph-container">
+                    <h3>Wiki-vote Clique Size Distribution</h3>
+                    <canvas id="tomitawikiChart"></canvas>
+                </div>
+
+                <!-- Email-Enron Dataset Results -->
+                <h3>Email-Enron Dataset Results</h3>
+                <table>
+                    <tr>
+                        <th>Metric</th>
+                        <th>Value</th>
+                    </tr>
+                    <tr>
+                        <td>Maximum Clique Size</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>Total Maximal Cliques Found</td>
+                        <td>226,859</td>
+                    </tr>
+                    <tr>
+                        <td>Execution Time</td>
+                        <td>2,762 milliseconds (2.76 seconds)</td>
+                    </tr>
+                </table>
+                <!-- Clique Size Distribution Graph -->
+                <div class="graph-container">
+                    <h3>Email-Enron Clique Size Distribution</h3>
+                    <canvas id="tomitaemailChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <script>
+        // Function to create a histogram for performance comparison
+        function createHistogram(canvasId, labels, data) {
+            var ctx = document.getElementById(canvasId).getContext('2d');
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Time in Seconds',
+                        data: data,
+                        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Algorithm'
+                            }
+                        },
+                        y: {
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: 'Seconds'
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        // Function to create a histogram for clique size distribution
+        function createCliqueSizeHistogram(canvasId, labels, data) {
+            var ctx = document.getElementById(canvasId).getContext('2d');
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Clique Size Distribution',
+                        data: data,
+                        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Clique Size'
+                            }
+                        },
+                        y: {
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: 'Number of Cliques'
+                            },
+                            ticks: {
+                                callback: function(value) {
+                                    if (value >= 1000000) {
+                                        return (value / 1000000).toFixed(1) + 'M';
+                                    } else if (value >= 1000) {
+                                        return (value / 1000).toFixed(1) + 'K';
+                                    } else {
+                                        return value;
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    plugins: {
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    var value = context.raw;
+                                    if (value >= 1000000) {
+                                        return (value / 1000000).toFixed(2) + ' million cliques';
+                                    } else if (value >= 1000) {
+                                        return (value / 1000).toFixed(2) + ' thousand cliques';
+                                    } else {
+                                        return value + ' cliques';
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        // Performance comparison charts - Real data from your results
+        createHistogram('enronChart', ['Bron-Kerbosch', 'Tomita', 'Arboricity'], [56.64, 2.76, 727]);
+        createHistogram('wikiChart',  ['Bron-Kerbosch', 'Tomita', 'Arboricity'], [83.16, 4.04, 142]);
+        createHistogram('skitterChart',['Bron-Kerbosch (Partial)', 'Tomita', 'Arboricity (Load only)'], [111755, 683.36, 25.23]);
+
+        // Email-Enron Distribution Data - Real data from your results
+        const enronLabels = Array.from({length: 19}, (_, i) => i + 2);
+        const enronData = [
+            14070, 7077, 13319, 18143, 22715, 25896, 24766, 22884, 21393, 17833,
+            15181, 11487, 7417, 3157, 1178, 286, 41, 10, 6
+        ];
+
+        // Create all Enron charts with the same real data
+        createCliqueSizeHistogram('aemailChart', enronLabels, enronData);
+        createCliqueSizeHistogram('bornemailChart', enronLabels, enronData);
+        createCliqueSizeHistogram('tomitaemailChart', enronLabels, enronData);
+
+        // Wiki-Vote Distribution Data - Real data from your results
+        const wikiLabels = Array.from({length: 16}, (_, i) => i + 2);
+        const wikiData = [
+            8655, 13718, 27292, 48416, 68872, 83266, 76732, 54456, 35470, 21736,
+            11640, 5449, 2329, 740, 208, 23
+        ];
+
+        // Create all Wiki-Vote charts with the same real data
+        createCliqueSizeHistogram('awikiChart', wikiLabels, wikiData);
+        createCliqueSizeHistogram('bornwikiChart', wikiLabels, wikiData);
+        createCliqueSizeHistogram('tomitawikiChart', wikiLabels, wikiData);
+
+        // Skitter Distribution Data - Real data from your results
+        // For Bron-Kerbosch on Skitter, we create a complete dataset
+        const bornSkitterLabels = Array.from({length: 66}, (_, i) => i + 2);
+        const bornSkitterData = [
+            2319807, 3171609, 1823321, 939336, 684873, 598284, 588889, 608937, 665661, 728098,
+            798073, 877282, 945194, 980831, 939987, 839330, 729601, 639413, 600192, 611976,
+            640890, 673924, 706753, 753633, 818353, 892719, 955212, 999860, 1034106, 1055653,
+            1017560, 946717, 878552, 809485, 744634, 663650, 583922, 520239, 474301, 420796,
+            367879, 321829, 275995, 222461, 158352, 99522, 62437, 39822, 30011, 25637,
+            17707, 9514, 3737, 2042, 1080, 546, 449, 447, 405, 283,
+            242, 146, 84, 49, 22, 4
+        ];
+
+        // Create Skitter log scale chart
+        function createBronSkitterLogChart() {
+            var ctx = document.getElementById('bornSkitterChartLog').getContext('2d');
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: bornSkitterLabels,
+                    datasets: [{
+                        label: 'Clique Size Distribution (Log Scale)',
+                        data: bornSkitterData,
+                        backgroundColor: function(context) {
+                            // Highlight smaller values with a different color
+                            const value = context.dataset.data[context.dataIndex];
+                            return value < 1000 ? 'rgba(255, 99, 132, 0.5)' : 'rgba(75, 192, 192, 0.2)';
+                        },
+                        borderColor: function(context) {
+                            const value = context.dataset.data[context.dataIndex];
+                            return value < 1000 ? 'rgba(255, 99, 132, 1)' : 'rgba(75, 192, 192, 1)';
+                        },
+                        borderWidth: 1,
+                        minBarLength: 5 // Ensure small values are still visible
+                    }]
+                },
+                options: {
+                    scales: {
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Clique Size'
+                            }
+                        },
+                        y: {
+                            type: 'logarithmic', // Use logarithmic scale to better show small values
+                            title: {
+                                display: true,
+                                text: 'Number of Cliques (log scale)'
+                            },
+                            ticks: {
+                                callback: function(value) {
+                                    if (value >= 1000000) {
+                                        return (value / 1000000).toFixed(1) + 'M';
+                                    } else if (value >= 1000) {
+                                        return (value / 1000).toFixed(1) + 'K';
+                                    } else {
+                                        return value;
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    plugins: {
+                        tooltip: {
+                            callbacks: {
+                                title: function(context) {
+                                    return 'Clique Size: ' + context[0].label;
+                                },
+                                label: function(context) {
+                                    var value = context.raw;
+                                    return 'Count: ' + value.toLocaleString();
+                                },
+                                afterLabel: function(context) {
+                                    var value = context.raw;
+                                    if (value >= 1000000) {
+                                        return '(' + (value / 1000000).toFixed(2) + ' million cliques)';
+                                    } else if (value >= 1000) {
+                                        return '(' + (value / 1000).toFixed(2) + ' thousand cliques)';
+                                    }
+                                    return '';
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        // Call both chart creation functions
+        createBronSkitterLogChart();
+        createCliqueSizeHistogram('bornSkitterChart', bornSkitterLabels, bornSkitterData);
+
+        // Create other Skitter charts with real data
+        createCliqueSizeHistogram('aSkitterChart', skitterLabels, skitterData);
+        createCliqueSizeHistogram('tomitaSkitterChart', skitterLabels, skitterData);
+
+        // Remove the duplicate call to createCliqueSizeHistogram for bornSkitterChart
+        // Add responsive design to all charts
+        window.addEventListener('resize', function() {
+            Chart.instances.forEach(chart => {
+                chart.resize();
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,438 @@
+Microsoft Windows [Version 10.0.19045.5608]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\walee\Downloads\DAA Assignment-I(Final 2.0)>cd "c:\Users\walee\Downloads\DAA Assignment-I(Final 2.0)\" && g++ ELS.cpp -o ELS && "c:\Users\walee\Downloads\DAA Assignment-I(Final 2.0)\"ELS
+
+Processing file: test_case.txt
+Graph loaded. Node count: 6
+Edge count: 8, Max degree: 4
+Degeneracy of the graph: 2
+First 10 vertices in the degeneracy ordering: 5 4 3 2 1 0
+Processing vertex 0/6 (0%), cliques: 0, max size: 0, elapsed: 0s
+Processing vertex 5/6 (83.3333%), cliques: 3, max size: 3, elapsed: 0.00103s        
+Found 3 maximal cliques in 0.002029 seconds
+Largest clique size: 3
+BronKerboschDegeneracy completed in 0.002029 seconds.
+Results written to statistics_test_case.txt and cliques_maximal_cliques_testcase.txt
+
+Processing file: Wiki-Vote-clean.txt
+Graph loaded. Node count: 7115
+Edge count: 100762, Max degree: 1065
+Degeneracy of the graph: 53
+First 10 vertices in the degeneracy ordering: 8273 8272 8271 7636 8265 8264 8263 8261 8260 8259
+Processing vertex 0/7115 (0%), cliques: 0, max size: 0, elapsed: 0s
+Processing vertex 7114/7115 (99.9859%), cliques: 459002, max size: 17, elapsed: 87.224s
+Found 459002 maximal cliques in 87.232 seconds
+Largest clique size: 17
+BronKerboschDegeneracy completed in 87.2341 seconds.
+Results written to statistics_Wiki-Vote-clean.txt and cliques_maximal_cliques_wiki.txt
+
+Processing file: Email-Enron-Clean.txt
+Graph loaded. Node count: 36692
+Edge count: 183831, Max degree: 1383
+Degeneracy of the graph: 43
+First 10 vertices in the degeneracy ordering: 36690 36689 36678 36677 36674 36673 36663 36662 36661 36660
+Processing vertex 0/36692 (0%), cliques: 0, max size: 0, elapsed: 0s
+Processing vertex 10000/36692 (27.2539%), cliques: 9178, max size: 2, elapsed: 0.310919s
+Processing vertex 20000/36692 (54.5078%), cliques: 17652, max size: 4, elapsed: 0.713212s
+Processing vertex 30000/36692 (81.7617%), cliques: 27657, max size: 8, elapsed: 1.97318s
+Processing vertex 36691/36692 (99.9973%), cliques: 226859, max size: 20, elapsed: 58.8158s
+Found 226859 maximal cliques in 58.826 seconds
+Largest clique size: 20
+BronKerboschDegeneracy completed in 58.826 seconds.
+Results written to statistics_Email-Enron-Clean.txt and cliques_maximal_cliques_emailenron.txt
+
+Processing file: as-skitter-clean.txt
+Graph loaded. Node count: 1696415
+Edge count: 11095298, Max degree: 35455
+Degeneracy of the graph: 111
+First 10 vertices in the degeneracy ordering: 1696414 1696413 1696412 1696411 1696410 1696409 1696408 1696407 1696402 1696401
+Processing vertex 0/1696415 (0%), cliques: 0, max size: 0, elapsed: 0.01347s
+Processing vertex 10000/1696415 (0.589478%), cliques: 9263, max size: 2, elapsed: 0.100934s
+Processing vertex 20000/1696415 (1.17896%), cliques: 19263, max size: 2, elapsed: 0.169368s
+Processing vertex 30000/1696415 (1.76844%), cliques: 29263, max size: 2, elapsed: 0.241397s
+Processing vertex 40000/1696415 (2.35791%), cliques: 39263, max size: 2, elapsed: 0.314904s
+Processing vertex 50000/1696415 (2.94739%), cliques: 49263, max size: 2, elapsed: 0.410879s
+Processing vertex 60000/1696415 (3.53687%), cliques: 59263, max size: 2, elapsed: 0.489196s
+Processing vertex 70000/1696415 (4.12635%), cliques: 69263, max size: 2, elapsed: 0.569359s
+Processing vertex 80000/1696415 (4.71583%), cliques: 79263, max size: 2, elapsed: 0.641637s
+Processing vertex 90000/1696415 (5.30531%), cliques: 89263, max size: 2, elapsed: 0.722595s
+Processing vertex 100000/1696415 (5.89478%), cliques: 99263, max size: 2, elapsed: 0.862434s
+Processing vertex 110000/1696415 (6.48426%), cliques: 109263, max size: 2, elapsed: 0.935642s
+Processing vertex 120000/1696415 (7.07374%), cliques: 119263, max size: 2, elapsed: 1.04571s
+Processing vertex 130000/1696415 (7.66322%), cliques: 129263, max size: 2, elapsed: 1.13809s
+Processing vertex 140000/1696415 (8.2527%), cliques: 139263, max size: 2, elapsed: 1.27786s
+Processing vertex 150000/1696415 (8.84218%), cliques: 149263, max size: 2, elapsed: 1.47616s
+Processing vertex 160000/1696415 (9.43165%), cliques: 159263, max size: 2, elapsed: 1.56773s
+Processing vertex 170000/1696415 (10.0211%), cliques: 169263, max size: 2, elapsed: 1.87143s
+Processing vertex 180000/1696415 (10.6106%), cliques: 179263, max size: 2, elapsed: 1.97281s
+Processing vertex 190000/1696415 (11.2001%), cliques: 189263, max size: 2, elapsed: 2.06413s
+Processing vertex 200000/1696415 (11.7896%), cliques: 199263, max size: 2, elapsed: 2.51909s
+Processing vertex 210000/1696415 (12.379%), cliques: 209263, max size: 2, elapsed: 2.74231s
+Processing vertex 220000/1696415 (12.9685%), cliques: 219263, max size: 2, elapsed: 2.925s
+Processing vertex 230000/1696415 (13.558%), cliques: 229263, max size: 2, elapsed: 3.18885s
+Processing vertex 240000/1696415 (14.1475%), cliques: 242757, max size: 3, elapsed: 3.74965s
+Processing vertex 250000/1696415 (14.737%), cliques: 257102, max size: 3, elapsed: 3.86631s
+Processing vertex 260000/1696415 (15.3264%), cliques: 271453, max size: 3, elapsed: 4.00102s
+Processing vertex 270000/1696415 (15.9159%), cliques: 286804, max size: 3, elapsed: 4.15301s
+Processing vertex 280000/1696415 (16.5054%), cliques: 301895, max size: 3, elapsed: 4.32598s
+Processing vertex 290000/1696415 (17.0949%), cliques: 316986, max size: 3, elapsed: 4.51864s
+Processing vertex 300000/1696415 (17.6844%), cliques: 332052, max size: 3, elapsed: 4.68139s
+Processing vertex 310000/1696415 (18.2738%), cliques: 347971, max size: 3, elapsed: 4.92522s
+Processing vertex 320000/1696415 (18.8633%), cliques: 363027, max size: 3, elapsed: 5.12662s
+Processing vertex 330000/1696415 (19.4528%), cliques: 378209, max size: 3, elapsed: 5.29146s
+Processing vertex 340000/1696415 (20.0423%), cliques: 393134, max size: 3, elapsed: 5.51598s
+Processing vertex 350000/1696415 (20.6317%), cliques: 407959, max size: 3, elapsed: 5.72979s
+Processing vertex 360000/1696415 (21.2212%), cliques: 422897, max size: 3, elapsed: 5.94558s
+Processing vertex 370000/1696415 (21.8107%), cliques: 437516, max size: 3, elapsed: 6.23606s
+Processing vertex 380000/1696415 (22.4002%), cliques: 452393, max size: 3, elapsed: 7.40481s
+Processing vertex 390000/1696415 (22.9897%), cliques: 467355, max size: 3, elapsed: 7.74089s
+Processing vertex 400000/1696415 (23.5791%), cliques: 481620, max size: 3, elapsed: 8.12082s
+Processing vertex 410000/1696415 (24.1686%), cliques: 496627, max size: 3, elapsed: 8.57037s
+Processing vertex 420000/1696415 (24.7581%), cliques: 511553, max size: 3, elapsed: 9.28248s
+Processing vertex 430000/1696415 (25.3476%), cliques: 526215, max size: 3, elapsed: 10.2083s
+Processing vertex 440000/1696415 (25.937%), cliques: 539984, max size: 3, elapsed: 11.3156s
+Processing vertex 450000/1696415 (26.5265%), cliques: 554373, max size: 3, elapsed: 12.0155s
+Processing vertex 460000/1696415 (27.116%), cliques: 567937, max size: 3, elapsed: 12.728s
+Processing vertex 470000/1696415 (27.7055%), cliques: 582095, max size: 3, elapsed: 13.772s
+Processing vertex 480000/1696415 (28.295%), cliques: 593334, max size: 3, elapsed: 14.348s
+Processing vertex 490000/1696415 (28.8844%), cliques: 607582, max size: 3, elapsed: 14.7368s
+Processing vertex 500000/1696415 (29.4739%), cliques: 622388, max size: 3, elapsed: 15.1951s
+Processing vertex 510000/1696415 (30.0634%), cliques: 637388, max size: 3, elapsed: 15.997s
+Processing vertex 520000/1696415 (30.6529%), cliques: 653844, max size: 3, elapsed: 20.3117s
+Processing vertex 530000/1696415 (31.2424%), cliques: 670043, max size: 4, elapsed: 24.0721s
+Processing vertex 540000/1696415 (31.8318%), cliques: 689868, max size: 4, elapsed: 24.7124s
+Processing vertex 550000/1696415 (32.4213%), cliques: 710235, max size: 4, elapsed: 25.3773s
+Processing vertex 560000/1696415 (33.0108%), cliques: 730522, max size: 4, elapsed: 25.95s
+Processing vertex 570000/1696415 (33.6003%), cliques: 750776, max size: 4, elapsed: 26.5024s
+Processing vertex 580000/1696415 (34.1897%), cliques: 770933, max size: 4, elapsed: 27.1073s
+Processing vertex 590000/1696415 (34.7792%), cliques: 791215, max size: 4, elapsed: 28.329s
+Processing vertex 600000/1696415 (35.3687%), cliques: 811618, max size: 4, elapsed: 29.4192s
+Processing vertex 610000/1696415 (35.9582%), cliques: 831127, max size: 4, elapsed: 30.4123s
+Processing vertex 620000/1696415 (36.5477%), cliques: 851362, max size: 4, elapsed: 31.4749s
+Processing vertex 630000/1696415 (37.1371%), cliques: 872017, max size: 4, elapsed: 33.6555s
+Processing vertex 640000/1696415 (37.7266%), cliques: 891861, max size: 4, elapsed: 34.8865s
+Processing vertex 650000/1696415 (38.3161%), cliques: 911868, max size: 4, elapsed: 36.3006s
+Processing vertex 660000/1696415 (38.9056%), cliques: 932017, max size: 4, elapsed: 37.7304s
+Processing vertex 670000/1696415 (39.4951%), cliques: 952712, max size: 4, elapsed: 38.8391s
+Processing vertex 680000/1696415 (40.0845%), cliques: 972863, max size: 4, elapsed: 42.4623s
+Processing vertex 690000/1696415 (40.674%), cliques: 992976, max size: 4, elapsed: 43.5597s
+Processing vertex 700000/1696415 (41.2635%), cliques: 1013783, max size: 4, elapsed: 45.3101s
+Processing vertex 710000/1696415 (41.853%), cliques: 1034908, max size: 4, elapsed: 46.7466s
+Processing vertex 720000/1696415 (42.4424%), cliques: 1057334, max size: 4, elapsed: 50.1858s
+Processing vertex 730000/1696415 (43.0319%), cliques: 1078677, max size: 4, elapsed: 58.253s
+Processing vertex 740000/1696415 (43.6214%), cliques: 1100220, max size: 4, elapsed: 67.9201s
+Processing vertex 750000/1696415 (44.2109%), cliques: 1124750, max size: 5, elapsed: 72.6338s
+Processing vertex 760000/1696415 (44.8004%), cliques: 1152040, max size: 5, elapsed: 74.0221s
+Processing vertex 770000/1696415 (45.3898%), cliques: 1179730, max size: 5, elapsed: 75.7631s
+Processing vertex 780000/1696415 (45.9793%), cliques: 1207690, max size: 5, elapsed: 77.4274s
+Processing vertex 790000/1696415 (46.5688%), cliques: 1234396, max size: 5, elapsed: 79.3309s
+Processing vertex 800000/1696415 (47.1583%), cliques: 1261826, max size: 5, elapsed: 82.2405s
+Processing vertex 810000/1696415 (47.7478%), cliques: 1288993, max size: 5, elapsed: 85.9071s
+Processing vertex 820000/1696415 (48.3372%), cliques: 1316208, max size: 5, elapsed: 87.6569s
+Processing vertex 830000/1696415 (48.9267%), cliques: 1343990, max size: 5, elapsed: 90.5646s
+Processing vertex 840000/1696415 (49.5162%), cliques: 1371169, max size: 5, elapsed: 95.4408s
+Processing vertex 850000/1696415 (50.1057%), cliques: 1398358, max size: 5, elapsed: 97.5798s
+Processing vertex 860000/1696415 (50.6951%), cliques: 1425492, max size: 5, elapsed: 100.068s
+Processing vertex 870000/1696415 (51.2846%), cliques: 1452951, max size: 5, elapsed: 102.452s
+Processing vertex 880000/1696415 (51.8741%), cliques: 1481943, max size: 5, elapsed: 107.309s
+Processing vertex 890000/1696415 (52.4636%), cliques: 1509975, max size: 5, elapsed: 112.775s
+Processing vertex 900000/1696415 (53.0531%), cliques: 1536456, max size: 5, elapsed: 131.022s
+Processing vertex 910000/1696415 (53.6425%), cliques: 1564461, max size: 5, elapsed: 143.654s
+Processing vertex 920000/1696415 (54.232%), cliques: 1593833, max size: 6, elapsed: 152.239s
+Processing vertex 930000/1696415 (54.8215%), cliques: 1628050, max size: 6, elapsed: 155.112s
+Processing vertex 940000/1696415 (55.411%), cliques: 1661718, max size: 6, elapsed: 159.285s
+Processing vertex 950000/1696415 (56.0004%), cliques: 1695151, max size: 6, elapsed: 164.837s
+Processing vertex 960000/1696415 (56.5899%), cliques: 1728986, max size: 6, elapsed: 169.687s
+Processing vertex 970000/1696415 (57.1794%), cliques: 1762689, max size: 6, elapsed: 173.58s
+Processing vertex 980000/1696415 (57.7689%), cliques: 1796299, max size: 6, elapsed: 179.566s
+Processing vertex 990000/1696415 (58.3584%), cliques: 1830503, max size: 6, elapsed: 183.937s
+Processing vertex 1000000/1696415 (58.9478%), cliques: 1864483, max size: 6, elapsed: 188.308s
+Processing vertex 1010000/1696415 (59.5373%), cliques: 1899596, max size: 6, elapsed: 194.112s
+Processing vertex 1020000/1696415 (60.1268%), cliques: 1934742, max size: 6, elapsed: 203.767s
+Processing vertex 1030000/1696415 (60.7163%), cliques: 1967778, max size: 6, elapsed: 222.625s
+Processing vertex 1040000/1696415 (61.3058%), cliques: 2001273, max size: 6, elapsed: 240.825s
+Processing vertex 1050000/1696415 (61.8952%), cliques: 2035937, max size: 6, elapsed: 260.856s
+Processing vertex 1060000/1696415 (62.4847%), cliques: 2075060, max size: 7, elapsed: 267.865s
+Processing vertex 1070000/1696415 (63.0742%), cliques: 2115823, max size: 7, elapsed: 274.982s
+Processing vertex 1080000/1696415 (63.6637%), cliques: 2156665, max size: 7, elapsed: 283.159s
+Processing vertex 1090000/1696415 (64.2531%), cliques: 2197758, max size: 7, elapsed: 290.826s
+Processing vertex 1100000/1696415 (64.8426%), cliques: 2239033, max size: 7, elapsed: 297.041s
+Processing vertex 1110000/1696415 (65.4321%), cliques: 2280571, max size: 7, elapsed: 303.782s
+Processing vertex 1120000/1696415 (66.0216%), cliques: 2324023, max size: 7, elapsed: 313.941s
+Processing vertex 1130000/1696415 (66.6111%), cliques: 2364901, max size: 7, elapsed: 326.666s
+Processing vertex 1139810/1696415 (67.1893%), cliques: 2404677, max size: 7, elapsed: 2715.51s
+Processing vertex 1140000/1696415 (67.2005%), cliques: 2405235, max size: 7, elapsed: 2719.56s
+Processing vertex 1150000/1696415 (67.79%), cliques: 2446508, max size: 7, elapsed: 2744.88s
+Processing vertex 1160000/1696415 (68.3795%), cliques: 2488409, max size: 7, elapsed: 2759.31s
+Processing vertex 1170000/1696415 (68.969%), cliques: 2536530, max size: 8, elapsed: 2769.34s
+Processing vertex 1178999/1696415 (69.4994%), cliques: 2580310, max size: 8, elapsed: 3187.13s
+Processing vertex 1180000/1696415 (69.5585%), cliques: 2585291, max size: 8, elapsed: 3188.87s
+Processing vertex 1190000/1696415 (70.1479%), cliques: 2633742, max size: 8, elapsed: 3200.47s
+Processing vertex 1200000/1696415 (70.7374%), cliques: 2684032, max size: 8, elapsed: 3210.38s
+Processing vertex 1210000/1696415 (71.3269%), cliques: 2733656, max size: 8, elapsed: 3226.86s
+Processing vertex 1220000/1696415 (71.9164%), cliques: 2781532, max size: 8, elapsed: 3252.17s
+Processing vertex 1230000/1696415 (72.5058%), cliques: 2829007, max size: 8, elapsed: 3284.12s
+Processing vertex 1240000/1696415 (73.0953%), cliques: 2878193, max size: 8, elapsed: 3313.81s
+Processing vertex 1250000/1696415 (73.6848%), cliques: 2931645, max size: 9, elapsed: 3330.45s
+Processing vertex 1260000/1696415 (74.2743%), cliques: 2988002, max size: 9, elapsed: 3341.12s
+Processing vertex 1270000/1696415 (74.8638%), cliques: 3046305, max size: 9, elapsed: 3352.04s
+Processing vertex 1280000/1696415 (75.4532%), cliques: 3104305, max size: 9, elapsed: 3371.1s
+Processing vertex 1290000/1696415 (76.0427%), cliques: 3161460, max size: 9, elapsed: 3398.07s
+Processing vertex 1300000/1696415 (76.6322%), cliques: 3217221, max size: 9, elapsed: 3442.45s
+Processing vertex 1310000/1696415 (77.2217%), cliques: 3274763, max size: 9, elapsed: 3473.59s
+Processing vertex 1320000/1696415 (77.8111%), cliques: 3336962, max size: 10, elapsed: 3489.46s
+Processing vertex 1330000/1696415 (78.4006%), cliques: 3403910, max size: 10, elapsed: 3504.09s
+Processing vertex 1340000/1696415 (78.9901%), cliques: 3471235, max size: 10, elapsed: 3527.74s
+Processing vertex 1350000/1696415 (79.5796%), cliques: 3536944, max size: 10, elapsed: 3558.82s
+Processing vertex 1360000/1696415 (80.1691%), cliques: 3602446, max size: 10, elapsed: 3617.82s
+Processing vertex 1370000/1696415 (80.7585%), cliques: 3667648, max size: 10, elapsed: 3647.02s
+Processing vertex 1380000/1696415 (81.348%), cliques: 3742294, max size: 11, elapsed: 3665.92s
+Processing vertex 1390000/1696415 (81.9375%), cliques: 3816522, max size: 11, elapsed: 3697.94s
+Processing vertex 1400000/1696415 (82.527%), cliques: 3891214, max size: 11, elapsed: 3754.57s
+Processing vertex 1410000/1696415 (83.1165%), cliques: 3967339, max size: 11, elapsed: 3795.36s
+Processing vertex 1420000/1696415 (83.7059%), cliques: 4047963, max size: 12, elapsed: 3824.14s
+Processing vertex 1430000/1696415 (84.2954%), cliques: 4131271, max size: 12, elapsed: 3864.49s
+Processing vertex 1440000/1696415 (84.8849%), cliques: 4215203, max size: 12, elapsed: 3927.45s
+Processing vertex 1450000/1696415 (85.4744%), cliques: 4301298, max size: 12, elapsed: 3973.09s
+Processing vertex 1460000/1696415 (86.0638%), cliques: 4396929, max size: 13, elapsed: 4019.81s
+Processing vertex 1470000/1696415 (86.6533%), cliques: 4490214, max size: 13, elapsed: 4096.65s
+Processing vertex 1480000/1696415 (87.2428%), cliques: 4587541, max size: 13, elapsed: 4154.95s
+Processing vertex 1490000/1696415 (87.8323%), cliques: 4694548, max size: 14, elapsed: 4210.22s
+Processing vertex 1500000/1696415 (88.4218%), cliques: 4806835, max size: 14, elapsed: 4295.93s
+Processing vertex 1510000/1696415 (89.0112%), cliques: 4927179, max size: 15, elapsed: 4362.31s
+Processing vertex 1520000/1696415 (89.6007%), cliques: 5051695, max size: 15, elapsed: 4456.18s
+Processing vertex 1530000/1696415 (90.1902%), cliques: 5182789, max size: 15, elapsed: 4540.18s
+Processing vertex 1540000/1696415 (90.7797%), cliques: 5317513, max size: 16, elapsed: 4662.4s
+Processing vertex 1550000/1696415 (91.3692%), cliques: 5461057, max size: 17, elapsed: 4763.1s
+Processing vertex 1560000/1696415 (91.9586%), cliques: 5608545, max size: 17, elapsed: 4918.06s
+Processing vertex 1570000/1696415 (92.5481%), cliques: 5775004, max size: 18, elapsed: 5112.18s
+Processing vertex 1580000/1696415 (93.1376%), cliques: 5943025, max size: 19, elapsed: 5315.58s
+Processing vertex 1590000/1696415 (93.7271%), cliques: 6125303, max size: 20, elapsed: 5591.75s
+Processing vertex 1598740/1696415 (94.2423%), cliques: 6290985, max size: 21, elapsed: 5891.85s
+Processing vertex 1600000/1696415 (94.3165%), cliques: 6316554, max size: 21, elapsed: 5938.2s
+Processing vertex 1606656/1696415 (94.7089%), cliques: 6453913, max size: 22, elapsed: 6238.31s
+Processing vertex 1610000/1696415 (94.906%), cliques: 6527316, max size: 22, elapsed: 6337.88s
+Processing vertex 1615844/1696415 (95.2505%), cliques: 6662263, max size: 23, elapsed: 6637.93s
+Processing vertex 1620000/1696415 (95.4955%), cliques: 6760922, max size: 23, elapsed: 6915.86s
+Processing vertex 1624492/1696415 (95.7603%), cliques: 6872911, max size: 24, elapsed: 7215.9s
+Processing vertex 1629099/1696415 (96.0319%), cliques: 6991229, max size: 24, elapsed: 7516s
+Processing vertex 1630000/1696415 (96.085%), cliques: 7013501, max size: 24, elapsed: 7640.78s
+Processing vertex 1633635/1696415 (96.2993%), cliques: 7112065, max size: 25, elapsed: 7941.03s
+Processing vertex 1637501/1696415 (96.5271%), cliques: 7223698, max size: 27, elapsed: 8241.39s
+Processing vertex 1640000/1696415 (96.6745%), cliques: 7300171, max size: 27, elapsed: 8468.19s
+Processing vertex 1642863/1696415 (96.8432%), cliques: 7389005, max size: 28, elapsed: 8768.21s
+Processing vertex 1646188/1696415 (97.0392%), cliques: 7503354, max size: 28, elapsed: 9068.24s
+Processing vertex 1649373/1696415 (97.227%), cliques: 7619185, max size: 30, elapsed: 9368.25s
+Processing vertex 1650000/1696415 (97.2639%), cliques: 7639962, max size: 30, elapsed: 9451.54s
+Processing vertex 1652532/1696415 (97.4132%), cliques: 7736338, max size: 30, elapsed: 9751.65s
+Processing vertex 1654644/1696415 (97.5377%), cliques: 7819243, max size: 30, elapsed: 10051.9s
+Processing vertex 1656707/1696415 (97.6593%), cliques: 7904325, max size: 30, elapsed: 10352.6s
+Processing vertex 1658413/1696415 (97.7599%), cliques: 7980325, max size: 31, elapsed: 10652.9s
+Processing vertex 1660000/1696415 (97.8534%), cliques: 8050979, max size: 31, elapsed: 10901.4s
+Processing vertex 1661596/1696415 (97.9475%), cliques: 8119581, max size: 31, elapsed: 11201.4s
+Processing vertex 1663370/1696415 (98.0521%), cliques: 8199105, max size: 31, elapsed: 11501.4s
+Processing vertex 1665044/1696415 (98.1507%), cliques: 8283276, max size: 34, elapsed: 11801.8s
+Processing vertex 1666877/1696415 (98.2588%), cliques: 8371646, max size: 34, elapsed: 12102s
+Processing vertex 1668186/1696415 (98.336%), cliques: 8434966, max size: 34, elapsed: 12402.3s
+Processing vertex 1669559/1696415 (98.4169%), cliques: 8511956, max size: 34, elapsed: 12702.3s
+Processing vertex 1670000/1696415 (98.4429%), cliques: 8534798, max size: 34, elapsed: 12780.2s
+Processing vertex 1671418/1696415 (98.5265%), cliques: 8612200, max size: 34, elapsed: 13080.3s
+Processing vertex 1672730/1696415 (98.6038%), cliques: 8690153, max size: 34, elapsed: 13380.3s
+Processing vertex 1674043/1696415 (98.6812%), cliques: 8767670, max size: 34, elapsed: 13680.4s
+Processing vertex 1675397/1696415 (98.761%), cliques: 8847505, max size: 34, elapsed: 13980.5s
+Processing vertex 1676799/1696415 (98.8437%), cliques: 8928037, max size: 35, elapsed: 14280.7s
+Processing vertex 1678197/1696415 (98.9261%), cliques: 9025321, max size: 35, elapsed: 14580.9s
+Processing vertex 1679440/1696415 (98.9994%), cliques: 9109187, max size: 36, elapsed: 14880.9s
+Processing vertex 1680000/1696415 (99.0324%), cliques: 9148339, max size: 36, elapsed: 14990.2s
+Processing vertex 1681328/1696415 (99.1107%), cliques: 9240653, max size: 36, elapsed: 15291.9s
+Processing vertex 1682639/1696415 (99.1879%), cliques: 9338493, max size: 40, elapsed: 15592s
+Processing vertex 1683935/1696415 (99.2643%), cliques: 9455242, max size: 40, elapsed: 15894.3s
+Processing vertex 1685181/1696415 (99.3378%), cliques: 9560692, max size: 40, elapsed: 16194.4s
+Processing vertex 1686268/1696415 (99.4019%), cliques: 9682462, max size: 40, elapsed: 16494.7s
+Processing vertex 1687276/1696415 (99.4613%), cliques: 9837190, max size: 41, elapsed: 16795s
+Processing vertex 1688166/1696415 (99.5137%), cliques: 10006171, max size: 42, elapsed: 17102.5s
+Processing vertex 1689277/1696415 (99.5792%), cliques: 10235785, max size: 43, elapsed: 17402.8s
+Processing vertex 1689939/1696415 (99.6183%), cliques: 10458689, max size: 44, elapsed: 17704.5s
+Processing vertex 1690000/1696415 (99.6218%), cliques: 10494061, max size: 44, elapsed: 17774.5s
+Processing vertex 1690516/1696415 (99.6523%), cliques: 10712765, max size: 50, elapsed: 18075.7s
+Processing vertex 1690970/1696415 (99.679%), cliques: 10915285, max size: 50, elapsed: 18381.1s
+Processing vertex 1691324/1696415 (99.6999%), cliques: 11267033, max size: 50, elapsed: 18684.8s
+Processing vertex 1691580/1696415 (99.715%), cliques: 11453668, max size: 50, elapsed: 18992.2s
+Processing vertex 1691970/1696415 (99.738%), cliques: 11688781, max size: 50, elapsed: 19294.4s
+Processing vertex 1692219/1696415 (99.7527%), cliques: 11850108, max size: 50, elapsed: 19637s
+Processing vertex 1692497/1696415 (99.769%), cliques: 12011965, max size: 54, elapsed: 19937.1s
+Processing vertex 1692675/1696415 (99.7795%), cliques: 12179383, max size: 54, elapsed: 20245.5s
+Processing vertex 1693048/1696415 (99.8015%), cliques: 12403579, max size: 60, elapsed: 20545.6s
+Processing vertex 1693428/1696415 (99.8239%), cliques: 12598945, max size: 60, elapsed: 20846.4s
+Processing vertex 1693666/1696415 (99.838%), cliques: 12809233, max size: 60, elapsed: 21146.6s
+Processing vertex 1694252/1696415 (99.8725%), cliques: 13206196, max size: 60, elapsed: 21464.1s
+Processing vertex 1694375/1696415 (99.8797%), cliques: 13380422, max size: 60, elapsed: 21766.9s
+Processing vertex 1694440/1696415 (99.8836%), cliques: 13516014, max size: 60, elapsed: 22089.6s
+Processing vertex 1694530/1696415 (99.8889%), cliques: 13672372, max size: 60, elapsed: 22390.2s
+Processing vertex 1694606/1696415 (99.8934%), cliques: 13825554, max size: 60, elapsed: 22710.3s
+Processing vertex 1694820/1696415 (99.906%), cliques: 14228963, max size: 60, elapsed: 23012.7s
+Processing vertex 1695063/1696415 (99.9203%), cliques: 14584320, max size: 60, elapsed: 23314.5s
+Processing vertex 1695135/1696415 (99.9245%), cliques: 14766159, max size: 60, elapsed: 23635.9s
+Processing vertex 1695156/1696415 (99.9258%), cliques: 14864058, max size: 60, elapsed: 23942.9s
+Processing vertex 1695221/1696415 (99.9296%), cliques: 15111988, max size: 60, elapsed: 24245.3s
+Processing vertex 1695285/1696415 (99.9334%), cliques: 15452916, max size: 60, elapsed: 24545.8s
+Processing vertex 1695369/1696415 (99.9383%), cliques: 15585549, max size: 60, elapsed: 24851.9s
+Processing vertex 1695389/1696415 (99.9395%), cliques: 15660403, max size: 60, elapsed: 25153.6s
+Processing vertex 1695413/1696415 (99.9409%), cliques: 15771665, max size: 66, elapsed: 25454s
+Processing vertex 1695426/1696415 (99.9417%), cliques: 15840281, max size: 66, elapsed: 25805.3s
+Processing vertex 1695438/1696415 (99.9424%), cliques: 15977622, max size: 66, elapsed: 26106.8s
+Processing vertex 1695452/1696415 (99.9432%), cliques: 16038350, max size: 66, elapsed: 26410.2s
+Processing vertex 1695467/1696415 (99.9441%), cliques: 16126010, max size: 66, elapsed: 26766.3s
+Processing vertex 1695491/1696415 (99.9455%), cliques: 16363849, max size: 67, elapsed: 27080.3s
+Processing vertex 1695500/1696415 (99.9461%), cliques: 16457141, max size: 67, elapsed: 27381.2s
+Processing vertex 1695514/1696415 (99.9469%), cliques: 16577269, max size: 67, elapsed: 27682.9s
+Processing vertex 1695529/1696415 (99.9478%), cliques: 16678481, max size: 67, elapsed: 27990.8s
+Processing vertex 1695541/1696415 (99.9485%), cliques: 16811175, max size: 67, elapsed: 28321.2s
+Processing vertex 1695557/1696415 (99.9494%), cliques: 17192058, max size: 67, elapsed: 29236.1s
+Processing vertex 1695558/1696415 (99.9495%), cliques: 17301233, max size: 67, elapsed: 29683.4s
+Processing vertex 1695576/1696415 (99.9505%), cliques: 17641998, max size: 67, elapsed: 30012.6s
+Processing vertex 1695592/1696415 (99.9515%), cliques: 18113991, max size: 67, elapsed: 30330.7s
+Processing vertex 1695605/1696415 (99.9523%), cliques: 18718381, max size: 67, elapsed: 30790.3s
+Processing vertex 1695613/1696415 (99.9527%), cliques: 19155374, max size: 67, elapsed: 31138.4s
+Processing vertex 1695626/1696415 (99.9535%), cliques: 19422189, max size: 67, elapsed: 31456.9s
+Processing vertex 1695639/1696415 (99.9543%), cliques: 19597377, max size: 67, elapsed: 31776.5s
+Processing vertex 1695648/1696415 (99.9548%), cliques: 20034450, max size: 67, elapsed: 32135.9s
+Processing vertex 1695655/1696415 (99.9552%), cliques: 20372278, max size: 67, elapsed: 32469.4s
+Processing vertex 1695662/1696415 (99.9556%), cliques: 20688302, max size: 67, elapsed: 32780.1s
+Processing vertex 1695675/1696415 (99.9564%), cliques: 21069301, max size: 67, elapsed: 33092.2s
+Processing vertex 1695689/1696415 (99.9572%), cliques: 21495218, max size: 67, elapsed: 33410s
+Processing vertex 1695704/1696415 (99.9581%), cliques: 21864358, max size: 67, elapsed: 33772.5s
+Processing vertex 1695722/1696415 (99.9591%), cliques: 22209572, max size: 67, elapsed: 34089.9s
+Processing vertex 1695742/1696415 (99.9603%), cliques: 22453488, max size: 67, elapsed: 34394.6s
+Processing vertex 1695988/1696415 (99.9748%), cliques: 22522210, max size: 67, elapsed: 34750.6s
+Processing vertex 1695993/1696415 (99.9751%), cliques: 22608591, max size: 67, elapsed: 35078.1s
+Processing vertex 1695996/1696415 (99.9753%), cliques: 22664097, max size: 67, elapsed: 35401.1s
+Processing vertex 1696001/1696415 (99.9756%), cliques: 22724346, max size: 67, elapsed: 35728.8s
+Processing vertex 1696006/1696415 (99.9759%), cliques: 22803014, max size: 67, elapsed: 36198.6s
+Processing vertex 1696008/1696415 (99.976%), cliques: 22909817, max size: 67, elapsed: 36611.5s
+Processing vertex 1696015/1696415 (99.9764%), cliques: 23050728, max size: 67, elapsed: 37022.7s
+Processing vertex 1696021/1696415 (99.9768%), cliques: 23173638, max size: 67, elapsed: 37340.9s
+Processing vertex 1696026/1696415 (99.9771%), cliques: 23248679, max size: 67, elapsed: 37731.5s
+Processing vertex 1696029/1696415 (99.9772%), cliques: 23343845, max size: 67, elapsed: 38044.3s
+Processing vertex 1696034/1696415 (99.9775%), cliques: 23442099, max size: 67, elapsed: 38488s
+Processing vertex 1696041/1696415 (99.978%), cliques: 23538318, max size: 67, elapsed: 38859.9s
+Processing vertex 1696047/1696415 (99.9783%), cliques: 23642779, max size: 67, elapsed: 39317.7s
+Processing vertex 1696048/1696415 (99.9784%), cliques: 23719631, max size: 67, elapsed: 39762.4s
+Processing vertex 1696049/1696415 (99.9784%), cliques: 23840431, max size: 67, elapsed: 40338.6s
+Processing vertex 1696053/1696415 (99.9787%), cliques: 23953590, max size: 67, elapsed: 40723.3s
+Processing vertex 1696055/1696415 (99.9788%), cliques: 24040440, max size: 67, elapsed: 41098.2s
+Processing vertex 1696059/1696415 (99.979%), cliques: 24127932, max size: 67, elapsed: 41605.5s
+Processing vertex 1696060/1696415 (99.9791%), cliques: 24202080, max size: 67, elapsed: 42025.2s
+Processing vertex 1696063/1696415 (99.9793%), cliques: 24271501, max size: 67, elapsed: 42360.6s
+Processing vertex 1696066/1696415 (99.9794%), cliques: 24376230, max size: 67, elapsed: 42670.2s
+Processing vertex 1696069/1696415 (99.9796%), cliques: 24450143, max size: 67, elapsed: 43025.6s
+Processing vertex 1696070/1696415 (99.9797%), cliques: 24553518, max size: 67, elapsed: 43344.9s
+Processing vertex 1696071/1696415 (99.9797%), cliques: 24670700, max size: 67, elapsed: 43789.1s
+Processing vertex 1696074/1696415 (99.9799%), cliques: 24734065, max size: 67, elapsed: 44124.6s
+Processing vertex 1696077/1696415 (99.9801%), cliques: 24834930, max size: 67, elapsed: 44590.5s
+Processing vertex 1696080/1696415 (99.9803%), cliques: 24947703, max size: 67, elapsed: 45055.4s
+Processing vertex 1696084/1696415 (99.9805%), cliques: 25093411, max size: 67, elapsed: 45662s
+Processing vertex 1696087/1696415 (99.9807%), cliques: 25236386, max size: 67, elapsed: 46513.2s
+Processing vertex 1696091/1696415 (99.9809%), cliques: 25306919, max size: 67, elapsed: 46841s
+Processing vertex 1696095/1696415 (99.9811%), cliques: 25372980, max size: 67, elapsed: 47218.9s
+Processing vertex 1696096/1696415 (99.9812%), cliques: 25451868, max size: 67, elapsed: 47542s
+Processing vertex 1696098/1696415 (99.9813%), cliques: 25519452, max size: 67, elapsed: 47871.4s
+Processing vertex 1696101/1696415 (99.9815%), cliques: 25604556, max size: 67, elapsed: 48269.1s
+Processing vertex 1696103/1696415 (99.9816%), cliques: 25706502, max size: 67, elapsed: 48831.5s
+Processing vertex 1696104/1696415 (99.9817%), cliques: 25881708, max size: 67, elapsed: 49536.3s
+Processing vertex 1696105/1696415 (99.9817%), cliques: 25977881, max size: 67, elapsed: 49923.7s
+Processing vertex 1696108/1696415 (99.9819%), cliques: 26033037, max size: 67, elapsed: 50284.2s
+Processing vertex 1696110/1696415 (99.982%), cliques: 26158507, max size: 67, elapsed: 50802.1s
+Processing vertex 1696113/1696415 (99.9822%), cliques: 26273775, max size: 67, elapsed: 51413.9s
+Processing vertex 1696114/1696415 (99.9823%), cliques: 26378312, max size: 67, elapsed: 51803.1s
+Processing vertex 1696116/1696415 (99.9824%), cliques: 26632672, max size: 67, elapsed: 52721.8s
+Processing vertex 1696118/1696415 (99.9825%), cliques: 26693569, max size: 67, elapsed: 53140.8s
+Processing vertex 1696119/1696415 (99.9826%), cliques: 26830060, max size: 67, elapsed: 53735.1s
+Processing vertex 1696120/1696415 (99.9826%), cliques: 26958382, max size: 67, elapsed: 54244s
+Processing vertex 1696122/1696415 (99.9827%), cliques: 27080180, max size: 67, elapsed: 54758.8s
+Processing vertex 1696123/1696415 (99.9828%), cliques: 27196901, max size: 67, elapsed: 55282.4s
+Processing vertex 1696125/1696415 (99.9829%), cliques: 27295343, max size: 67, elapsed: 55731.4s
+Processing vertex 1696126/1696415 (99.983%), cliques: 27410627, max size: 67, elapsed: 56267.3s
+Processing vertex 1696127/1696415 (99.983%), cliques: 27502013, max size: 67, elapsed: 56608s
+Processing vertex 1696128/1696415 (99.9831%), cliques: 27602749, max size: 67, elapsed: 57090.9s
+Processing vertex 1696129/1696415 (99.9831%), cliques: 27684827, max size: 67, elapsed: 57466.7s
+Processing vertex 1696130/1696415 (99.9832%), cliques: 27799559, max size: 67, elapsed: 57811.6s
+Processing vertex 1696131/1696415 (99.9833%), cliques: 27978837, max size: 67, elapsed: 58672.4s
+Processing vertex 1696133/1696415 (99.9834%), cliques: 28180584, max size: 67, elapsed: 59663.6s
+Processing vertex 1696137/1696415 (99.9836%), cliques: 28330101, max size: 67, elapsed: 60127s
+Processing vertex 1696140/1696415 (99.9838%), cliques: 28503063, max size: 67, elapsed: 60603.1s
+Processing vertex 1696142/1696415 (99.9839%), cliques: 28701400, max size: 67, elapsed: 61486s
+Processing vertex 1696143/1696415 (99.984%), cliques: 28775650, max size: 67, elapsed: 61811.6s
+Processing vertex 1696145/1696415 (99.9841%), cliques: 28913271, max size: 67, elapsed: 62182.6s
+Processing vertex 1696148/1696415 (99.9843%), cliques: 29047717, max size: 67, elapsed: 62573.8s
+Processing vertex 1696150/1696415 (99.9844%), cliques: 29187119, max size: 67, elapsed: 63286.2s
+Processing vertex 1696151/1696415 (99.9844%), cliques: 29232916, max size: 67, elapsed: 63600.8s
+Processing vertex 1696153/1696415 (99.9846%), cliques: 29313996, max size: 67, elapsed: 64071.3s
+Processing vertex 1696154/1696415 (99.9846%), cliques: 29408626, max size: 67, elapsed: 64499.4s
+Processing vertex 1696155/1696415 (99.9847%), cliques: 29451080, max size: 67, elapsed: 64808.6s
+Processing vertex 1696157/1696415 (99.9848%), cliques: 29548519, max size: 67, elapsed: 65200.8s
+Processing vertex 1696159/1696415 (99.9849%), cliques: 29776776, max size: 67, elapsed: 66225.9s
+Processing vertex 1696160/1696415 (99.985%), cliques: 29856012, max size: 67, elapsed: 66604.4s
+Processing vertex 1696162/1696415 (99.9851%), cliques: 29949297, max size: 67, elapsed: 67034.5s
+Processing vertex 1696164/1696415 (99.9852%), cliques: 30182758, max size: 67, elapsed: 68332.5s
+Processing vertex 1696167/1696415 (99.9854%), cliques: 30450540, max size: 67, elapsed: 69719.2s
+Processing vertex 1696169/1696415 (99.9855%), cliques: 30553759, max size: 67, elapsed: 70274.3s
+Processing vertex 1696170/1696415 (99.9856%), cliques: 30771761, max size: 67, elapsed: 71280.6s
+Processing vertex 1696172/1696415 (99.9857%), cliques: 30894702, max size: 67, elapsed: 72046.4s
+Processing vertex 1696174/1696415 (99.9858%), cliques: 31077501, max size: 67, elapsed: 72851.9s
+Processing vertex 1696178/1696415 (99.986%), cliques: 31185344, max size: 67, elapsed: 73273.7s
+Processing vertex 1696179/1696415 (99.9861%), cliques: 31385212, max size: 67, elapsed: 73951s
+Processing vertex 1696180/1696415 (99.9861%), cliques: 31462338, max size: 67, elapsed: 74467s
+Processing vertex 1696181/1696415 (99.9862%), cliques: 31581184, max size: 67, elapsed: 75003s
+Processing vertex 1696184/1696415 (99.9864%), cliques: 31677661, max size: 67, elapsed: 75608.5s
+Processing vertex 1696187/1696415 (99.9866%), cliques: 31732073, max size: 67, elapsed: 75963.6s
+Processing vertex 1696190/1696415 (99.9867%), cliques: 31784490, max size: 67, elapsed: 76291.4s
+Processing vertex 1696191/1696415 (99.9868%), cliques: 32069829, max size: 67, elapsed: 78116s
+Processing vertex 1696193/1696415 (99.9869%), cliques: 32167121, max size: 67, elapsed: 78587.5s
+Processing vertex 1696195/1696415 (99.987%), cliques: 32560660, max size: 67, elapsed: 79739.4s
+Processing vertex 1696196/1696415 (99.9871%), cliques: 32645660, max size: 67, elapsed: 80077.5s
+Processing vertex 1696197/1696415 (99.9871%), cliques: 32797729, max size: 67, elapsed: 81121.2s
+Processing vertex 1696198/1696415 (99.9872%), cliques: 32958056, max size: 67, elapsed: 83118.6s
+Processing vertex 1696220/1696415 (99.9885%), cliques: 34340084, max size: 67, elapsed: 83694.4sze: 67, elapsed: 96355.8s                                              ze: 67, elapsed: 91063s
+Processing vertex 1696223/1696415 (99.9887%), cliques: 34430371, max size: 67, elapsed: 91872sze: 67, elapsed: 96792.4s                                              ze: 67, elapsed: 92281.4s
+Processing vertex 1696226/1696415 (99.9889%), cliques: 34576204, max size: 67, elapsed: 93748.2sze: 67, elapsed: 97550.6s                                              ze: 67, elapsed: 94492.7s
+Processing vertex 1696231/1696415 (99.9892%), cliques: 34648285, max size: 67, elapsed: 94940.1sze: 67, elapsed: 97888.8s                                              e: 67, elapsed: 95657.2s
+Processing vertex 1696233/1696415 (99.9893%), cliques: 34725286, max size: 67, elapsed: 98326.7s
+Processing vertex 1696237/1696415 (99.9895%), cliques: 34893619, max size: 67, elapsed: 98931.3s
+Processing vertex 1696239/1696415 (99.9896%), cliques: 35062563, max size: 67, elapsed: 99439.9s
+Processing vertex 1696241/1696415 (99.9897%), cliques: 35131139, max size: 67, elapsed: 99799.3s
+Processing vertex 1696242/1696415 (99.9898%), cliques: 35205717, max size: 67, elapsed: 100227s
+Processing vertex 1696244/1696415 (99.9899%), cliques: 35270501, max size: 67, elapsed: 100607s
+Processing vertex 1696248/1696415 (99.9902%), cliques: 35365934, max size: 67, elapsed: 101005s
+Processing vertex 1696252/1696415 (99.9904%), cliques: 35455316, max size: 67, elapsed: 101403s
+Processing vertex 1696254/1696415 (99.9905%), cliques: 35501899, max size: 67, elapsed: 101751s
+Processing vertex 1696256/1696415 (99.9906%), cliques: 35673752, max size: 67, elapsed: 102537s
+Processing vertex 1696258/1696415 (99.9907%), cliques: 35740338, max size: 67, elapsed: 102896s
+Processing vertex 1696260/1696415 (99.9909%), cliques: 35785019, max size: 67, elapsed: 103288s
+Processing vertex 1696264/1696415 (99.9911%), cliques: 35827983, max size: 67, elapsed: 103618s
+Processing vertex 1696268/1696415 (99.9913%), cliques: 35873331, max size: 67, elapsed: 103974s
+Processing vertex 1696269/1696415 (99.9914%), cliques: 35923848, max size: 67, elapsed: 104321s
+Processing vertex 1696273/1696415 (99.9916%), cliques: 35987189, max size: 67, elapsed: 104697s
+Processing vertex 1696275/1696415 (99.9917%), cliques: 36046171, max size: 67, elapsed: 105017s
+Processing vertex 1696278/1696415 (99.9919%), cliques: 36115523, max size: 67, elapsed: 105485s
+Processing vertex 1696280/1696415 (99.992%), cliques: 36204524, max size: 67, elapsed: 105863s
+Processing vertex 1696281/1696415 (99.9921%), cliques: 36319116, max size: 67, elapsed: 106329s
+Processing vertex 1696282/1696415 (99.9922%), cliques: 36429524, max size: 67, elapsed: 106702s
+Processing vertex 1696284/1696415 (99.9923%), cliques: 36518048, max size: 67, elapsed: 107303s
+Processing vertex 1696286/1696415 (99.9924%), cliques: 36630276, max size: 67, elapsed: 107936s
+Processing vertex 1696289/1696415 (99.9926%), cliques: 36682990, max size: 67, elapsed: 108317s
+Processing vertex 1696291/1696415 (99.9927%), cliques: 36743352, max size: 67, elapsed: 108644s
+Processing vertex 1696296/1696415 (99.993%), cliques: 36833319, max size: 67, elapsed: 109151s
+Processing vertex 1696300/1696415 (99.9932%), cliques: 36891665, max size: 67, elapsed: 109504s
+Processing vertex 1696305/1696415 (99.9935%), cliques: 36963608, max size: 67, elapsed: 109913s
+Processing vertex 1696309/1696415 (99.9938%), cliques: 37020151, max size: 67, elapsed: 110245s
+Processing vertex 1696311/1696415 (99.9939%), cliques: 37116434, max size: 67, elapsed: 110735s
+Processing vertex 1696316/1696415 (99.9942%), cliques: 37192091, max size: 67, elapsed: 111093s
+Processing vertex 1696322/1696415 (99.9945%), cliques: 37255271, max size: 67, elapsed: 111409s
+Processing vertex 1696341/1696415 (99.9956%), cliques: 37313763, max size: 67, elapsed: 111714s
+Processing vertex 1696414/1696415 (99.9999%), cliques: 37322355, max size: 67, elapsed: 111755s
+Found 37322355 maximal cliques in 111755 seconds
+Largest clique size: 67
+BronKerboschDegeneracy completed in 111755 seconds.
+Results written to statistics_as-skitter-clean.txt and cliques_maximal_cliques_asskitter.txt

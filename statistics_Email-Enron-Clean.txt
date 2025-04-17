@@ -1,0 +1,38 @@
+Reading graph from: Email-Enron-Clean.txt
+Graph loaded with 36692 vertices
+Total edges: 183831
+Maximum degree: 1383
+Degeneracy of the graph: 43
+
+First 10 vertices in the degeneracy ordering: 36690 36689 36678 36677 36674 36673 36663 36662 36661 36660 
+
+Finding all maximal cliques...
+
+
+----- FINAL RESULTS -----
+Found 226859 maximal cliques in 58826 ms (58.826 seconds)
+Largest clique size: 20
+Distribution of clique sizes:
+Clique size 2: 14070 cliques
+Clique size 3: 7077 cliques
+Clique size 4: 13319 cliques
+Clique size 5: 18143 cliques
+Clique size 6: 22715 cliques
+Clique size 7: 25896 cliques
+Clique size 8: 24766 cliques
+Clique size 9: 22884 cliques
+Clique size 10: 21393 cliques
+Clique size 11: 17833 cliques
+Clique size 12: 15181 cliques
+Clique size 13: 11487 cliques
+Clique size 14: 7417 cliques
+Clique size 15: 3157 cliques
+Clique size 16: 1178 cliques
+Clique size 17: 286 cliques
+Clique size 18: 41 cliques
+Clique size 19: 10 cliques
+Clique size 20: 6 cliques
+Total execution time: 58 seconds
+-----------------------
+
+BronKerboschDegeneracy completed in 58.826 seconds.
