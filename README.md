@@ -69,7 +69,7 @@ Make sure to give the correct path and that the first line contains the Number o
 ### Webpage and cleaned dataset link
 
 Cleaned Dataset Link :- [DAA](https://drive.google.com/drive/folders/1ryaa1RFrjOlgR2xHpGYmLwlYdg9C4WwU?usp=sharing)  
-Website Link :- [Website](https://sthita19.github.io/DAA/)
+Website Link :- [DAA_I Website](https://waleedSk7.github.io/DAA_I/)
 
 ### Team Members
 
