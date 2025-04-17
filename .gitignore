@@ -1,0 +1,13 @@
+# Large dataset files
+Cleaned Dataset/as-skitter-clean.txt
+Uncleaned Dataset/as-skitter.txt
+as-skitter-clean.txt
+
+# Build files
+*.exe
+*.out
+
+# Other potential large files
+*.zip
+*.rar
+*.7z
