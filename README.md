@@ -2,6 +2,15 @@
 
 This repository contains various implementations of graph algorithms along with performance analyses on different datasets. It also includes a web interface that displays experimental results and additional insights.
 
+## Important Note About Large Dataset Files
+
+**Some dataset files exceed GitHub's file size limit of 100MB and are not included directly in this repository:**
+- `Cleaned Dataset/as-skitter-clean.txt` (142MB)
+- `Uncleaned Dataset/as-skitter.txt` (142MB)
+- `as-skitter-clean.txt` (142MB)
+
+These files can be downloaded from the Google Drive link provided in the "Webpage and cleaned dataset" section below.
+
 ## Data Setup
 
 1. **Download Datasets:**  
